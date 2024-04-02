@@ -27,6 +27,43 @@
 #full_text_description{
     display: none;
 }
+.top-filter {
+    justify-content: start;
+    gap: 12px;
+}
+.nav-mk__standart-link{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    text-align: left;
+    color: #000000;
+    transition: 0.2s;
+}
+.nav-mk__standart-link:hover{
+    color: #FF8139;
+}
+.nav-mk__standart-link:active{
+    color: #FFFFFF
+}
+.nav-mk__standart-grey{
+    transition: 0.2s;
+    background-color: #F4F2F1;
+}
+.nav-mk__standart-grey:hover{
+    background-color: #EDEAE8;
+}
+.nav-mk__standart-grey:active{
+    background-color: #FF8139;
+}
+.filter__reset_new {
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 23px;
+    top: -6px;
+}
+
 /*.fl-ttu {
     max-width: inherit;
     font-weight: inherit;
