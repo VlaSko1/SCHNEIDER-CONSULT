@@ -63,12 +63,79 @@
     border-radius: 23px;
     top: -6px;
 }
-
-/*.fl-ttu {
-    max-width: inherit;
-    font-weight: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    margin: 0;
+.wrap_banner{
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    z-index: 800;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.whatsapp-fix{
+    width:300px;
+    height:40px;
+    border-radius:24px 32px 0 0;
+    background-color:#01652e;
+    text-decoration:none;
+    position: static;
+    cursor:pointer;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    z-index:1001;
+    padding-left:10px;
+}
+.call-fix{
+    height: 40px;
+    background-color: #0698EC;
+    padding: 6px 24px 6px 10px;
+    gap: 8px;
+    border-radius: 24px 32px 0px 0px;
+    opacity: 0px;
+    cursor:pointer;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display: flex;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    z-index:1001;
+    position: static;
+}
+.call_text, .whatsapp-fix span, .mail_baner span{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
     text-align: left;
-}*/
+    color: #FFFFFF;
+}
+.call_text_phone{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.41px;
+    text-align: left;
+    color: #FFFFFF;
+}
+.mail_baner{
+    height: 40px;
+    padding: 6px 24px 6px 10px;
+    gap: 8px;
+    border-radius: 24px 32px 0px 0px;
+    opacity: 0px;
+    background-color: #4F9652;
+    cursor:pointer;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display: flex;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    z-index:1001;
+    position: static;
+}

@@ -1,5 +1,7 @@
 window.onload = () => {
-    //alert("Куку");
+  let wrapBaner = document.querySelector('.wrap_banner');
+  wrapBaner.style.width = getWidthContainer() + 'px';
+   
 }
 
 function toggleTextDescription() {
@@ -7,7 +9,6 @@ function toggleTextDescription() {
     let shortText = document.getElementById('short_text_description');
     let fullText = document.getElementById('full_text_description');
     if (button.dataset.toggle === '0') {
-        console.log(1111111);
         shortText.style.display = 'none';
         fullText.style.display = 'inline';
         button.textContent = ' скрыть'
@@ -18,4 +19,12 @@ function toggleTextDescription() {
         button.textContent = ' раскрыть'
         button.dataset.toggle = '0';
     }
+}
+
+function getWidthContainer() {
+    let container = document.querySelector('#main_container');
+
+    const compStyle = getComputedStyle(container);
+
+    return container.offsetWidth - parseInt(compStyle.paddingRight) - parseInt(compStyle.paddingLeft);
 }
